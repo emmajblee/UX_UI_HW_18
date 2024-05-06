@@ -113,6 +113,7 @@ h3{
 
 .appImage{
     grid-area: appImageArea;
+    
    
 }
 
@@ -148,11 +149,15 @@ h3{
         
     }
     
-    .workGrid h3{
-        display: block;
+    .viewTitle{
         position: relative;
-        top: 300px;
-        margin-top: 100px;
+        bottom: -350px;
+        margin-bottom: 300px;
+    }
+
+    .workGrid button{
+        margin-bottom: 100px;
+        
     }
     
     
