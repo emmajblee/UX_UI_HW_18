@@ -39,10 +39,7 @@ p{
     padding: -30px;
     font-family: 'Avenir';
     font-size: small;
-    
-    
    
-    
 }
 body{
     font-family: 'Avenir';
@@ -54,4 +51,70 @@ h1{
 
 .workGrid{
     display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: 1fr;
+    background-color: rgb(252, 252, 252);
+    margin: 50px;
+    padding: 150px;
+    grid-template-areas: "animalImageArea" "animalArea"
+    "appImageArea" "appArea";   
+
+
+}
+
+.workGrid img {
+    width:50%;
+    height: 100%;
+    text-align: left;
+    object-fit: contain;
+
+}
+
+.workGrid p{
+   padding-left: 53%;
+   position: relative;
+    bottom: 80%;
+    font-size: medium;
+}
+
+button{
+   position: relative;
+    bottom: 80%;
+    left: 56%;
+
+
+}
+
+.workGrid h4{
+    position: relative;
+    bottom: 80%;
+    left: 56%;
+    font-size:larger;
+}
+h3{
+    text-align: center;
+}
+
+.Animal{
+    grid-area: animalArea;
+    height:150px
+    
+}
+
+.App{
+    grid-area: appArea;
+    
+}
+
+.animalImage{
+    grid-area: animalImageArea;
+    background-color: rgb(252, 252, 252);
+    position:relative;
+    top:40%;
+}
+
+.appImage{
+    grid-area: appImageArea;
+    position:relative;
+    top:40%;
 }
